@@ -29,20 +29,7 @@ Após a instalação, crie um novo projeto com o comando:
 npx create-expo-app@latest exemplo-app
 ```
 
-#### 3. Escolha um template
-
-Durante a criação do projeto, o Expo CLI perguntará qual template você quer usar. As opções comuns são:
-
--   **blank** — projeto básico, sem nada adicional
-    
--   **blank (TypeScript)** — projeto básico com suporte a TypeScript
-    
--   **tabs (TypeScript)** — projeto com navegação por abas e TypeScript
-    
-
-Escolha o que melhor se encaixa no seu projeto.
-
-#### 4. Acesse a pasta do projeto
+#### 3. Acesse a pasta do projeto
 
 Entre na pasta recém-criada:
 
@@ -50,7 +37,7 @@ Entre na pasta recém-criada:
 cd exemplo-app
 ```
 
-#### 5. Inicie o servidor de desenvolvimento
+#### 4. Inicie o servidor de desenvolvimento
 
 Execute o comando:
 
@@ -60,7 +47,7 @@ expo start
 
 Isso abrirá a interface do Expo Developer Tools no navegador, de onde você pode iniciar seu app em emuladores ou dispositivos físicos.
 
-#### 6. Teste o app no seu celular
+#### 5. Teste o app no seu celular
 
 -   Abra o app **Expo Go** no seu celular.
     
