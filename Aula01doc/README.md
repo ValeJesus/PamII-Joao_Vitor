@@ -1,6 +1,7 @@
 # Documentação Aula 01
 
-**Objetivo** : Replicar 3 telas de qualquer aplicativo, nesse caso o spotify
+**Objetivo** : Replicar 3 telas de qualquer aplicativo utilizando expo e react native, nesse caso o aplicativo escolhido foi o spotify
+
 
 # **Telas do projeto**
 ![Preview do projeto](SpotifyTelas.png)
@@ -8,7 +9,7 @@
 
 ## Descrição : 
 
-**Biblioteca :**  reúne tudo o que você salvou (músicas curtidas, playlists, artistas e álbuns), permitindo organizar e acessar facilmente.
+**Biblioteca :**  reúne tudo o que você salvou (músicas curtidas, playlists, artistas e álbuns), permitindo organizar e acessar facilmente, nesse projeto todas as musicas que serão utilizadas serão as do alee, klismann e jimmy.
 
 **Buscar :** permite pesquisar músicas, artistas, álbuns e podcasts, além de explorar gêneros e categorias.
 
@@ -101,3 +102,7 @@ LUZ, CAMA E AÇÃO – 3:02 – Alee, MC Cabelinho, Qualywav1
 
 TUDO DE NOVO – 2:45 – Alee, Qualywav1
 ```
+
+#### Final
+
+O intuito do projeto é replicar somente as paginas, com sistemas de navegação entre si, imagens e textos. Porém tenho o interesse de adicionar as musicas no aplicativo pra que sejá possivel de escuta-las
