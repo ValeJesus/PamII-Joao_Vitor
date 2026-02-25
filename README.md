@@ -26,7 +26,7 @@ npm install -g expo-cli
 Após a instalação, crie um novo projeto com o comando:
 
 ```bash
-npx create-expo-app exemplo-app
+npx create-expo-app@latest exemplo-app
 ```
 
 #### 3. Escolha um template
