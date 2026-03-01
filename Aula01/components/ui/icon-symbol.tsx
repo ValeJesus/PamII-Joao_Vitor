@@ -14,8 +14,16 @@ type IconSymbolName = keyof typeof MAPPING;
  * - see SF Symbols in the [SF Symbols](https://developer.apple.com/sf-symbols/) app.
  */
 const MAPPING = {
+  // Abas padrão/base.
   'house.fill': 'home',
   'paperplane.fill': 'send',
+
+  // Abas criadas para o layout estilo Spotify.
+  magnifyingglass: 'search',
+  'books.vertical.fill': 'library-books',
+  plus: 'add',
+
+  // Ícones já usados no template original.
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
 } as IconMapping;

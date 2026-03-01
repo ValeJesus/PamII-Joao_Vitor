@@ -3,31 +3,59 @@ import React from 'react';
 
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 
+/**
+ * Layout das abas inferiores.
+ *
+ * Dica para próximas telas:
+ * - cada Tabs.Screen aponta para um arquivo dentro de app/(tabs)
+ * - o `name` precisa ser o mesmo nome do arquivo da rota
+ */
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        // Cores da barra de navegação no estilo escuro (inspirado no Spotify).
+        tabBarActiveTintColor: '#ffffff',
+        tabBarInactiveTintColor: '#8a8a8a',
         headerShown: false,
+        tabBarStyle: {
+          backgroundColor: '#000000',
+          borderTopColor: '#000000',
+        },
+        // Mantém feedback tátil no toque das abas.
         tabBarButton: HapticTab,
       }}>
+      {/* Rota: app/(tabs)/home.tsx */}
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
-          title: 'Home',
+          title: 'Início',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
+      {/* Rota: app/(tabs)/search.tsx */}
       <Tabs.Screen
-        name="explore"
+        name="search"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Buscar',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="magnifyingglass" color={color} />,
+        }}
+      />
+      {/* Rota: app/(tabs)/index.tsx (biblioteca) */}
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Sua Biblioteca',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="books.vertical.fill" color={color} />,
+        }}
+      />
+      {/* Rota: app/(tabs)/create.tsx */}
+      <Tabs.Screen
+        name="create"
+        options={{
+          title: 'Criar',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="plus" color={color} />,
         }}
       />
     </Tabs>
