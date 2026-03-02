@@ -31,6 +31,8 @@ export default function RootLayout() {
       <Stack>
         {/* Grupo principal de abas (Início, Buscar, Biblioteca, Criar) */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="playlists/vitamina" options={{ headerShown: false }} />
+        <Stack.Screen name="playlists/macarrao" options={{ headerShown: false }} />
         {/* Exemplo de rota fora das tabs, apresentada como modal */}
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
       </Stack>
