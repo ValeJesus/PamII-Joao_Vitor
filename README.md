@@ -42,7 +42,7 @@ cd exemplo-app
 Execute o comando:
 
 ```bash
-expo start
+npx expo start
 ```
 
 Isso abrirá a interface do Expo Developer Tools no navegador, de onde você pode iniciar seu app em emuladores ou dispositivos físicos.
