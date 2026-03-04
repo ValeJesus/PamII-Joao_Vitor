@@ -1,30 +1,34 @@
-import { Ionicons } from '@expo/vector-icons';
-import { Stack, useRouter } from 'expo-router';
-import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import type { ImageSourcePropType } from 'react-native';
+import { Ionicons } from '@expo/vector-icons'; // importação dos icones
+import { Stack, useRouter } from 'expo-router'; // importar a biblioteca pra rota, voltar pra pagina da biblioca
+import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'; // biblioteca de imagens, scroll, text e os escambal ai
+import type { ImageSourcePropType } from 'react-native';  // validar imagem pra nao dar erro
 
+
+// estrutura dos dados das musicas
 type SongItem = {
   id: string;
   title: string;
   artist: string;
   cover: ImageSourcePropType;
 };
-
+// dados das musicas
 const songs: SongItem[] = [
-  { id: '1', title: 'Vinte Grãos de Areia', artist: 'Pecaos', cover: require('../../assets/images/vitaminabanana.png') },
-  { id: '2', title: 'Traumas', artist: 'Gyylo, Tiizy', cover: require('../../assets/images/vitaminamorango.png') },
-  { id: '3', title: 'Rosa', artist: 'iann guxtavo, Gyylo, Elleven', cover: require('../../assets/images/pelelist.png') },
-  { id: '4', title: 'Poesia de Porão', artist: 'Gyylo', cover: require('../../assets/images/vitaminabanana.png') },
-  { id: '5', title: 'Surtar Faz Parte do Processo', artist: 'Gyylo, iann guxtavo, Elleven', cover: require('../../assets/images/vitaminamorango.png') },
-  { id: '6', title: 'Chá de Vida', artist: 'MC Marks, MC Hariel, Perera DJ', cover: require('../../assets/images/pelelist.png') },
+  { id: '1', title: 'ATRIZ', artist: 'Alee, Qualywav1', cover: require('../../assets/images/caosdlx.png') },
+  { id: '2', title: 'SEGREDO', artist: 'Alee, Brandão85', cover: require('../../assets/images/caosdlx.png') },
+  { id: '3', title: 'PARTY', artist: 'Alee, Klisman, saboya', cover: require('../../assets/images/caosdlx.png') },
+  { id: '4', title: 'COMPASSO', artist: 'Alee, Leviano', cover: require('../../assets/images/caosdlx.png') },
+  { id: '5', title: 'SÃO PAULO', artist: 'Alee, Klisman', cover: require('../../assets/images/caosdlx.png') },
+  { id: '6', title: 'ALPINISTA SOCIAL', artist: 'Alee, Klisman', cover: require('../../assets/images/caosdlx.png') },
 ];
-
+// codigo da pagina
 export default function VitaminaPlaylistScreen() {
-  const router = useRouter();
+  const router = useRouter(); // constante do botao de voltar
 
+  // codigo da pagina, tudo que é visivel ta aqui men
   return (
     <SafeAreaView style={styles.safeArea}>
-      <Stack.Screen options={{ headerShown: false }} />
+      <Stack.Screen options={{ headerShown: false }} /> {/*deixa o header invisivel o playlist/vitamina*/}
+       
       <ScrollView contentContainerStyle={styles.content}>
         <Pressable style={styles.backButton} onPress={() => router.back()}>
           <Ionicons name="arrow-back" size={28} color="#ffffff" />
@@ -72,8 +76,7 @@ const styles = StyleSheet.create({
   },
   backButton: {
     marginBottom: 12,
-    marginTop: 8,
-    width: 32,
+    marginTop: 30,
   },
   cover: {
     alignSelf: 'center',

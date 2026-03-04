@@ -11,11 +11,23 @@ type SongItem = {
 };
 
 const songs: SongItem[] = [
-  { id: '1', title: 'SLOW DANCING IN THE DARK', artist: 'Joji', cover: require('../../assets/images/macarrao.png') },
-  { id: '2', title: 'Lonely Day', artist: 'System Of A Down', cover: require('../../assets/images/pelelist.png') },
-  { id: '3', title: 'Constellations', artist: 'Jade LeMac', cover: require('../../assets/images/vitaminamorango.png') },
-  { id: '4', title: 'Please, Please, Please, Let Me Get W...', artist: 'The Smiths', cover: require('../../assets/images/vitaminabanana.png') },
-  { id: '5', title: 'In the End', artist: 'Linkin Park', cover: require('../../assets/images/macarrao.png') },
+  { id: '1', title: 'SLOW DANCING IN THE DARK', artist: 'Joji', cover: require('../../assets/images/slow.png') },
+  { id: '2', title: 'Lonely Day', artist: 'System Of A Down', cover: require('../../assets/images/sofd.png') },
+  { id: '3', title: 'Constellations', artist: 'Jade LeMac', cover: require('../../assets/images/constellations.png') },
+  { id: '4', title: 'Please, Please, Please, Let Me Get W...', artist: 'The Smiths', cover: require('../../assets/images/thesmiths.png') },
+  { id: '5', title: 'In the End', artist: 'Linkin Park', cover: require('../../assets/images/linkpark.png') },
+  { id: '6', title: 'Moth To a Flame(With the Weeknd)', artist:'Swedish House Mafia', cover: require('../../assets/images/moth.png') },
+  { id: '7', title: 'Apocalypse', artist:'Cigarettes After Sex', cover: require('../../assets/images/cigarettes.png')},
+  { id: '8', title: 'Training Wheels', artist: 'Melanie Martinez', cover: require('../../assets/images/crybaby.png')},
+  { id: '9', title: 'The Way I Love You', artist: 'Jorja Smith', cover: require('../../assets/images/thewayilove.png')},
+  { id: '10', title: 'Veludo Marrom', artist: 'Liniker', cover: require('../../assets/images/veludo.png')},
+  { id: '11', title: 'Tempo Perdido', artist: 'Legião Urbana', cover: require('../../assets/images/legiao.png')},
+  { id : '12', title: 'Lanterna Dos Afogados', artist: 'Os Paralamas Do Sucesso', cover: require('../../assets/images/lantafogados.png')},
+  { id : '13', title:'Anti-Heroi' , artist: 'Link Do Zap', cover: require('../../assets/images/linkpark.png')},
+  { id : '13', title:'Te Esperando' , artist: 'Luan Santana', cover: require('../../assets/images/luan.png')},
+  { id : '13', title:'Me Um Block Nele' , artist: 'João Gomes', cover: require('../../assets/images/joaogomes.png')},
+  { id : '13', title:'Flashback' , artist: 'MC Paulin da Capital', cover: require('../../assets/images/flashback.png')},
+  
 ];
 
 export default function MacarraoPlaylistScreen() {
@@ -29,9 +41,9 @@ export default function MacarraoPlaylistScreen() {
           <Ionicons name="arrow-back" size={28} color="#ffffff" />
         </Pressable>
 
-        <Image source={require('../../assets/images/macarrao.png')} style={styles.cover} />
+        <Image source={require('../../assets/images/dogmal.png')} style={styles.cover} />
 
-        <Text style={styles.title}>Macarrão</Text>
+        <Text style={styles.title}>Nana Playlist</Text>
         <Text style={styles.subtitle}>João · 1h 2min</Text>
 
         <View style={styles.actionsRow}>

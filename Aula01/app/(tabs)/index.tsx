@@ -23,9 +23,9 @@ const libraryItems: LibraryItem[] = [
   },
   {
     id: 'macarrao',
-    title: 'Macarrão',
+    title: 'Nana',
     subtitle: 'Playlist · João',
-    coverSource: require('../../assets/images/macarrao.png'),
+    coverSource: require('../../assets/images/dogmal.png'),
     route: '/playlists/macarrao',
   },
 ];
@@ -104,22 +104,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 8,
+    marginBottom:20,
+
   },
   headerTitle: {
     color: '#ffffff',
     fontSize: 24,
     fontWeight: '700',
+    marginBottom: 2,
+    marginTop:30,
   },
   headerIcons: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: 14,
+    marginTop:30,
   },
   filtersRow: {
     gap: 6,
     marginBottom: 2,
-    paddingRight: 12,
+    paddingRight: 2,
     
   },
   filterChip: {
